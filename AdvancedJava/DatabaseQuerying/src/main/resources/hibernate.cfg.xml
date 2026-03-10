@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- MySQL Driver -->
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <!-- MySQL URL -->
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/student
+        </property>
+
+        <!-- MySQL Username -->
+        <property name="hibernate.connection.username">
+            root
+        </property>
+
+        <!-- MySQL Password -->
+        <property name="hibernate.connection.password">
+            123456
+        </property>
+
+        <!-- MySQL Dialect -->
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+
+        <!-- Hibernate Properties -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+    </session-factory>
+</hibernate-configuration>
