@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="bean_id" class="ioc_with_xmlconfig.her"/>
+    <bean id="bean_id_2" class="ioc_with_xmlconfig.her"/>
+    <bean id="BI" class="ioc_with_xmlconfig.her">
+        <property name="name" value="Hibban">
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="kit_id" class="dependancy_injection_usingMap.Kit">
+        <constructor-arg name="name" value="56"></constructor-arg>
+        <constructor-arg name="items">
+            <map>
+                <entry key="Bat" value="5000"></entry>
+                <entry key="Ball" value="100"></entry>
+                <entry key="Stumps" value="6000"></entry>
+            </map>
+        </constructor-arg>
+    </bean>
+</beans>
