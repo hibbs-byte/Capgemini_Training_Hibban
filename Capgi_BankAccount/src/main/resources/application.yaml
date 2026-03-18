@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: Capgi_BankAccount
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/bankAccount
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver   # ✅ FIXED
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
